@@ -1,0 +1,80 @@
+.imageList-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-block: 30px;
+}
+
+.imageList-top span {
+    align-items: center;
+    aspect-ratio: 1;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .24);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    width: 50px;
+}
+
+.imageList-top span img {
+    width: 30px;
+}
+
+.imageList-top h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.imageList-search {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.imageList-search img {
+    cursor: pointer;
+    width: 30px;
+}
+
+.imageForm-notActive {
+    background-color: rgba(0, 119, 255, .1);
+    border: 2px solid #07f;
+    border-radius: 5px;
+    color: #07f;
+    cursor: pointer;
+    font-weight: 700;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.imageForm-active {
+    background-color: rgba(0, 119, 255, .1);
+    border: 2px solid #ff1300;
+    border-radius: 5px;
+    color: #ff1300;
+    cursor: pointer;
+    font-weight: 700;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.imageList-search input {
+    font-size: 1.1rem;
+    font-weight: 300;
+    outline: none;
+    padding: 5px 5px 5px 10px;
+}
+
+.imageList{
+    grid-gap: 20px;
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: row;
+    grid-auto-rows: 150px;
+    grid-template: repeat(1, 150px) / repeat(auto-fit, minmax(175px, .5fr));
+    margin-bottom: 50px;
+}
